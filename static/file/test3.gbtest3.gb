@@ -1,0 +1,217 @@
+LOCUS       NG_012088               4892 bp    DNA     linear   PRI 13-SEP-2017
+DEFINITION  Homo sapiens interleukin 10 (IL10), RefSeqGene on chromosome 1.
+ACCESSION   NG_012088 REGION: 5001..9892
+VERSION     NG_012088.1
+KEYWORDS    RefSeq; RefSeqGene.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 4892)
+  AUTHORS   Gesser B, Leffers H, Jinquan T, Vestergaard C, Kirstein N,
+            Sindet-Pedersen S, Jensen SL, Thestrup-Pedersen K and Larsen CG.
+  TITLE     Identification of functional domains on human interleukin 10
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 94 (26), 14620-14625 (1997)
+   PUBMED   9405662
+REFERENCE   2  (bases 1 to 4892)
+  AUTHORS   Eskdale J, Kube D, Tesch H and Gallagher G.
+  TITLE     Mapping of the human IL10 gene and further characterization of the
+            5' flanking sequence
+  JOURNAL   Immunogenetics 46 (2), 120-128 (1997)
+   PUBMED   9162098
+REFERENCE   3  (bases 1 to 4892)
+  AUTHORS   Vieira P, de Waal-Malefyt R, Dang MN, Johnson KE, Kastelein R,
+            Fiorentino DF, deVries JE, Roncarolo MG, Mosmann TR and Moore KW.
+  TITLE     Isolation and expression of human cytokine synthesis inhibitory
+            factor cDNA clones: homology to Epstein-Barr virus open reading
+            frame BCRFI
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 88 (4), 1172-1176 (1991)
+   PUBMED   1847510
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AL513315.15 and AL591846.15.
+            This sequence is a reference standard in the RefSeqGene project.
+            
+            Summary: The protein encoded by this gene is a cytokine produced
+            primarily by monocytes and to a lesser extent by lymphocytes. This
+            cytokine has pleiotropic effects in immunoregulation and
+            inflammation. It down-regulates the expression of Th1 cytokines,
+            MHC class II Ags, and costimulatory molecules on macrophages. It
+            also enhances B cell survival, proliferation, and antibody
+            production. This cytokine can block NF-kappa B activity, and is
+            involved in the regulation of the JAK-STAT signaling pathway.
+            Knockout studies in mice suggested the function of this cytokine as
+            an essential immunoregulator in the intestinal tract. Mutations in
+            this gene are associated with an increased susceptibility to HIV-1
+            infection and rheumatoid arthritis.[provided by RefSeq, May 2011].
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-9970              AL513315.15        2001-11970          c
+            9971-11892          AL591846.15        193564-195485       c
+FEATURES             Location/Qualifiers
+     source          1..4892
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="1"
+                     /map="1q32.1"
+     gene            1..4892
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /note="interleukin 10"
+                     /db_xref="GeneID:3586"
+                     /db_xref="HGNC:HGNC:5962"
+                     /db_xref="MIM:124092"
+     mRNA            join(1..224,1080..1139,1436..1588,2601..2666,3767..4892)
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /product="interleukin 10"
+                     /transcript_id="NM_000572.2"
+                     /db_xref="GeneID:3586"
+                     /db_xref="HGNC:HGNC:5962"
+                     /db_xref="MIM:124092"
+     exon            1..224
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /inference="alignment:Splign:2.1.0"
+                     /number=1
+     CDS             join(60..224,1080..1139,1436..1588,2601..2666,3767..3859)
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /note="T-cell growth inhibitory factor; cytokine synthesis
+                     inhibitory factor"
+                     /codon_start=1
+                     /product="interleukin-10 precursor"
+                     /protein_id="NP_000563.1"
+                     /db_xref="CCDS:CCDS1467.1"
+                     /db_xref="GeneID:3586"
+                     /db_xref="HGNC:HGNC:5962"
+                     /db_xref="MIM:124092"
+                     /translation="MHSSALLCCLVLLTGVRASPGQGTQSENSCTHFPGNLPNMLRDL
+                     RDAFSRVKTFFQMKDQLDNLLLKESLLEDFKGYLGCQALSEMIQFYLEEVMPQAENQD
+                     PDIKAHVNSLGENLKTLRLRLRRCHRFLPCENKSKAVEQVKNAFNKLQEKGIYKAMSE
+                     FDIFINYIEAYMTMKIRN"
+     exon            1080..1139
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /inference="alignment:Splign:2.1.0"
+                     /number=2
+     exon            1436..1588
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /inference="alignment:Splign:2.1.0"
+                     /number=3
+     STS             1436..1577
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /standard_name="IL10"
+                     /db_xref="UniSTS:264070"
+     exon            2601..2666
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /inference="alignment:Splign:2.1.0"
+                     /number=4
+     exon            3767..4892
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /inference="alignment:Splign:2.1.0"
+                     /number=5
+     STS             3859..3945
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /standard_name="IL10"
+                     /db_xref="UniSTS:479745"
+     STS             3945..4131
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /standard_name="SHGC-76259"
+                     /db_xref="UniSTS:13362"
+     STS             4040..4202
+                     /gene="IL10"
+                     /gene_synonym="CSIF; GVHDS; IL-10; IL10A; TGIF"
+                     /standard_name="AL034234"
+                     /db_xref="UniSTS:94051"
+ORIGIN      
+        1 acacatcagg ggcttgctct tgcaaaacca aaccacaaga cagacttgca aaagaaggca
+       61 tgcacagctc agcactgctc tgttgcctgg tcctcctgac tggggtgagg gccagcccag
+      121 gccagggcac ccagtctgag aacagctgca cccacttccc aggcaacctg cctaacatgc
+      181 ttcgagatct ccgagatgcc ttcagcagag tgaagacttt ctttgtgagt atgattcctt
+      241 cctgtccttt ctctcttcct gggactgcct gaactagaca ttctcctgga actataagaa
+      301 ccctcctcct gcgcctccac ctccatcccc aacacctatt cccccaaact taaattctta
+      361 agagaatcct agatcaagcc atgggtttgg tgagttaagc taagccagat gatacagtaa
+      421 atgtgcagga aacctgcctt ataaagtaaa tgcgttctct ctcgtgctga gaaacttata
+      481 agatcctgct ggcgctctat actttattgg ctaggagaag taaagaaatg tctgattcga
+      541 ggtgaagatg ctccccatgc cttgcagcag ggaaatttaa attgcctctg cttagagcgt
+      601 ttccagacct gaaagaccag tggtttaggg aagcactcta catgagggaa acctgcatta
+      661 gaaggagctt cttaatccct gggatctttc caagctaaac tggatgtcta cagtggggag
+      721 aaagaaaagc agagaacagg acatgagggg ggctcaaggc cccgaagggt tgacataggt
+      781 gtcccttaaa gccgaatgta gctccgcaga aagaagacca ggactgagtc aagcttctgc
+      841 tttcccttca aaatcggcca gattttttaa ataacttgac tctgaggagg aggacctgat
+      901 ttaagtgatg gtcccatcac tgttgaatcc tctgttttta aaactcccct tttgattttt
+      961 ttgggccaga gccaatttta tttaaaaaaa aaaatctcta aatgaaaggg catcaaaaag
+     1021 accgcatttc agttatttcc ccaaacctca agttcattct ccttttgttc ttcctgcagc
+     1081 aaatgaagga tcagctggac aacttgttgt taaaggagtc cttgctggag gactttaagg
+     1141 tgagagcagg ggcggggtgc tgggggagtg tgcagcatga ttaagggaag ggagactctg
+     1201 cttcctgatt gcagggaatt gggtttgttt ccttcgcttt gaaaaggaga agtgggaaga
+     1261 tgttaactca gcacatccag cagccagagg gtttacaaag ggctcagtcc cttcggggag
+     1321 gcttctggtg aaggaggatc gctagaacca agctgtcctc ttaagctagt tgcagcagcc
+     1381 cctcctccca gccacctccg ccaatctctc actcaccttt ggctcctgcc cttagggtta
+     1441 cctgggttgc caagccttgt ctgagatgat ccagttttac ctggaggagg tgatgcccca
+     1501 agctgagaac caagacccag acatcaaggc gcatgtgaac tccctggggg agaacctgaa
+     1561 gaccctcagg ctgaggctac ggcgctgtgt aagtagcaga tcagtttttt cccttgcagc
+     1621 tgcccccaaa ataccatctc ctacagacca gcagggacac tcacatccac agacacagca
+     1681 aagacacaga ctggcagagc tagctgtaaa tgaggaaaga ctcctggagt cagatctctt
+     1741 gctcatttct ctttgagcag gcgttggggg tggctgctag gcatttacat gtgaaatttg
+     1801 caaacagctt tcctgttatt tgtgagtcat ttgtgggtta ttaactactc ccctctctct
+     1861 tcataaaagg agcccagagc ttcagtcagg cctccactgc ctctttgtaa ctagaccctg
+     1921 ggcggggagc taaggttccc aagcagagga aacatcattc acctctttta atctcaatgt
+     1981 tttgaaagca aagctctaag aagggcccaa ttgactgaca ggatttcccc tggcatttta
+     2041 gaagggacaa gggggctatt catccccagg ctagtgtcta tgagtaattc ctccaggtaa
+     2101 tttatttctc caactgaaat gatgccctca ctactaatgg tttcccctgt tctgtcacca
+     2161 atattggaaa atcagttggt gtctatttgt aggacaaggc tatgtgaagg gtttggtccc
+     2221 agtagcttcc ctcctcagat gcttagaagt gttcctcggt ggctgtgact gacggggagg
+     2281 aacaggagag agaggcagaa aaggacaggc tgaagaatgc ctcgctcagc actgcaggag
+     2341 atactgtaga gttctggggg aggaaggaat cccaagacct gggttgtcat ccaagccttg
+     2401 caaacatctt ggagtgagtc ctggagaaat acatttaact cccagggcca tggaagcagg
+     2461 gctcagttct ctctgggagc tgtgaggcaa ggcatttgga taaatctggc ctcctcatga
+     2521 tgccaccagc ttgtccccta agtgtgatgg acatggagct ggaagccagg atcaccaaca
+     2581 ctttctcttt tcttccacag catcgatttc ttccctgtga aaacaagagc aaggccgtgg
+     2641 agcaggtgaa gaatgccttt aataaggtga gcttggatgg tggcagagag ggtctgcaga
+     2701 gcacaaccca tgcccactcc ccaaccccaa agcatggaag gtggtgggga ctcaataggc
+     2761 cccattcttc attggagaga gtgtgggaac ctgacagatg gtatgacctg ctcagccagt
+     2821 gaggagctgc tgccttgatt gtatttgttt tctgttaagt gtctttgggg gtttctaaat
+     2881 gactgctcgc tgcctttgca ggcttgcggg ttaggctggc cggccagcct gtgaacacag
+     2941 tgagctgcat gctggggaga gtgacaaagg aaacagaaag tacagaaagt agcttgttgg
+     3001 gaatctaggc tgaacccaca cgtgcaggaa gctggcacat aaatgtgcac atacaaatac
+     3061 acctgggggt tcagcccaga ctccccagaa ctcagaatga gcaggaagct ggattctcac
+     3121 ttaacctgga gttggttcaa gcccgctttc catctgccct tcgcacctgc ggaggtgcct
+     3181 gagaatgtca gttcccaaac gaaatggggt ttcacacttc caactgtgcg tgaacttttt
+     3241 cagtctgatt tcccagaaac cgtgcggcct atgtcctcct cgtgggctgg ggacagacac
+     3301 tgcacagagt gccaacatca gggggtgtga atttctcata gtaggtcagg gcggcagggc
+     3361 agggcctgct cagtgtgttg gtgggagaac acagacattt aaaaggctcc ctcctctcct
+     3421 ctcaccgtct tgctttcgaa gcgcttcctc taatgtcttt tcatcaaact ctgcataatc
+     3481 atcatgtgaa tacgtgacct ttaaaattgt tgaaaaggca tcattttgaa gacagtgctt
+     3541 tgcaaaatga atgctcccct tgctaggggg aggcctggag gagatgaagg tcaatgcaca
+     3601 gcctttccca aggcagctag gcctatcctc tggtttactt cccagcgtga gggagaacaa
+     3661 gcaacctctg cactcaaggt catgcccatc catgagcatg agggagggga gcctatttag
+     3721 tccccagaaa ggattttaac tgtatgtttc ttatctctct gcacagctcc aagagaaagg
+     3781 catctacaaa gccatgagtg agtttgacat cttcatcaac tacatagaag cctacatgac
+     3841 aatgaagata cgaaactgag acatcagggt ggcgactcta tagactctag gacataaatt
+     3901 agaggtctcc aaaatcggat ctggggctct gggatagctg acccagcccc ttgagaaacc
+     3961 ttattgtacc tctcttatag aatatttatt acctctgata cctcaacccc catttctatt
+     4021 tatttactga gcttctctgt gaacgattta gaaagaagcc caatattata atttttttca
+     4081 atatttatta ttttcacctg tttttaagct gtttccatag ggtgacacac tatggtattt
+     4141 gagtgtttta agataaatta taagttacat aagggaggaa aaaaaatgtt ctttggggag
+     4201 ccaacagaag cttccattcc aagcctgacc acgctttcta gctgttgagc tgttttccct
+     4261 gacctccctc taatttatct tgtctctggg cttggggctt cctaactgct acaaatactc
+     4321 ttaggaagag aaaccaggga gcccctttga tgattaattc accttccagt gtctcggagg
+     4381 gattccccta acctcattcc ccaaccactt cattcttgaa agctgtggcc agcttgttat
+     4441 ttataacaac ctaaatttgg ttctaggccg ggcgcggtgg ctcacgcctg taatcccagc
+     4501 actttgggag gctgaggcgg gtggatcact tgaggtcagg agttcctaac cagcctggtc
+     4561 aacatggtga aaccccgtct ctactaaaaa tacaaaaatt agccgggcat ggtggcgcgc
+     4621 acctgtaatc ccagctactt gggaggctga ggcaagagaa ttgcttgaac ccaggagatg
+     4681 gaagttgcag tgagctgata tcatgcccct gtactccagc ctgggtgaca gagcaagact
+     4741 ctgtctcaaa aaataaaaat aaaaataaat ttggttctaa tagaactcag ttttaactag
+     4801 aatttattca attcctctgg gaatgttaca ttgtttgtct gtcttcatag cagattttaa
+     4861 ttttgaataa ataaatgtat cttattcaca tc
+//
+

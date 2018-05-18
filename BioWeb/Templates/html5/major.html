@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小王的生物信息学网站</title>
+	<link rel="stylesheet" href="/static/css3/main.css" type="text/css"/>
+	<link rel="stylesheet" href="/static/css3/bootstrap.css" type="text/css"/>
+	<script type="text/javascript" src="/static/js/jquery-3.3.1.js"></script>
+	<style>th{text-align:center;}</style>
+<body>
+	<center>
+		<header>
+			<div id="hdiv"><h1>生物信息课程设计</h1></div>
+		</header>
+		<main>
+			<menu>
+				<ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+					<li id="li7" class="btn-primary">百度窗口</li>
+					<li id="li6" class="btn-primary">NCBI窗口</li>
+					<li id="li1" class="btn-primary">文件上传</li>
+					<li id="li2" class="btn-primary">可视化统计</li>
+					<li id="li3" class="btn-primary">DNA成分分析</li>
+					<li id="li5" class="btn-primary">DNA序列</li>
+					<li id="li9" class="btn-primary">CDS序列</li>
+					<li id="li4" class="btn-primary">蛋白质序列分析</li>
+					<li id="li8" class="btn-primary">swiss窗口</li>					
+					<li id="li10" class="btn-primary">文件信息管理</li>
+					<li id="li11" class="btn-primary">用户成员表</li>
+				</ul>
+			</menu>
+			<textbox>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title" id="title">面板标题</h3>
+					</div>
+					<div class="panel-body">
+						<div id="content" style="display:none;">
+							<img src="{{images.Aimg}}"/>
+							<img src="{{images.Timg}}"/>
+							<img src="{{images.Cimg}}"/>
+							<img src="{{images.Gimg}}"/>
+						</div>
+						<div id="update">
+							<form action="major" method="post" id="Upform" enctype="multipart/form-data">
+								{% csrf_token %}
+								<h3>请上传faste格式的文件</h3></br>
+								<input name="myfile" type="file" />
+								<h3>请将DNA序列粘贴入文本框中</h3></br>
+								<div id='DNA'></div></br>
+								<button id="submit" class="btn btn-primary btn-lg" type="submit">提交</button>
+							</form>
+							<h3>{{HaveData}}</h3>
+						</div>
+						<div id="statist" style="display:none;">
+							<img src="{{tongji_data.tongji_img}}"/>
+							<table>
+							  <tr>
+							    <th>名字</th>
+							    <th>数量</th>
+							    <th>比例</th>
+							  </tr>
+							  {% for val in valumn %}
+							  <tr>
+							  	{% for i in val %}
+							    <td>{{i}}</td>
+							   	{% endfor %}
+							  </tr>
+							  {% endfor %}
+							</table>
+						</div>
+						<div id="protein" style="display:none;">
+							<img src="{{perp_data.pertine_img}}"/>
+							<div id="perdata">
+								{% for i in translation %}
+							    		{{i}}
+							   		{% endfor %}
+							</div>
+							<img style="width:49.7%;height:30%;float:right;" src="/static/image/anjisuan.png"/>
+							<button class="btn btn-primary btn-lg" >点击可复制到粘贴板</button>
+						</div>
+						<div id="sequence" style="display:none;">
+								<h3>{{LOCUS}}的DNA序列</h3></br>
+								<div id='DNA'>
+									{% for i in DNA %}
+							    		{{i}}
+							   		{% endfor %}
+							    </div></br>
+								<button id="submit" class="btn btn-primary btn-lg" type="submit">点击可复制到粘贴板</button>
+						</div>
+						<div id="cds" style="display:none;">
+								<h3>{{LOCUS}}的CDS序列</h3></br>
+								<div name='DNAc' style="background:black;height:40px;color:white;">{{CDS}}</div></br>
+								<div id='DNA'>
+									{% for i in CdsSequence %}
+							    		{{i}}
+							   		{% endfor %}
+								</div></br>
+								<button id="submit" class="btn btn-primary btn-lg" type="submit">点击可复制到粘贴板</button>
+						</div>
+						<div id="tables" style="display:none;overflow:auto;">
+							<table>
+							  <tr>
+							  	<th>Nid</th>
+							    <th>LOCUS</th>
+							    <th>DEFINITION</th>
+							    <th>CDS</th>
+							    <th>保存日期</th>
+							    <th>数据操作</th>
+							  </tr>
+						  	  {% for ufile in UpFile %}
+							  <tr>
+							    <td>{{ufile.xid}}</td>
+							    <td>{{ufile.LOCUS}}</td>
+							    <td style="text-font:1px;">{{ufile.DEFINITION}}</td>
+							    <td>{{ufile.CDS}}</td>
+							    <td>{{ufile.add_date}}</td>
+							    <td><a>删除</a></td>
+							  </tr>
+							  {% endfor %}
+							</table>
+							<div style="height:20px;background:purple;width:100%;overflow:both;">hello</div>							
+						</div>
+						<div id="usertable" style="display:none;">
+							<table>
+							  <tr>
+							  	<th>id</th>
+							    <th>姓名</th>
+							    <th>联系电话</th>
+							    <th>注册时间</th>
+							  </tr>
+						  	  {% for user in users %}
+							  <tr>
+							  	<td>{{user.nid}}</td>
+							    <td>{{user.name}}</td>
+							    <td>{{user.phone}}</td>
+							    <td>{{user.add_date}}</td>
+							  </tr>
+							  {% endfor %}
+							</table>							
+						</div>
+						<div id="ncbi" style="display:none;">
+							<iframe style="height:100%;width:100%" src="https://www.ncbi.nlm.nih.gov/"></iframe>						
+						</div>
+						<div id="baidu" style="display:none;">
+							<iframe style="height:100%;width:100%" src="https://www.baidu.com/"></iframe>						
+						</div>
+						<div id="rcsb" style="display:none;">
+							<iframe style="height:100%;width:100%" src="https://www.rcsb.org/"></iframe>						
+						</div>
+					</div>
+				</div>
+			</textbox>
+		<footer>
+			<h1>脚</h1>
+		</footer>
+	</center>
+	<script>
+		$("#li1").click(function(){
+			$("#title").text("上传文件");
+			$(".panel-body").children().slideDown();
+			$(".panel-body").children().not("#update").slideUp();
+		});
+		$("#li2").click(function(){
+			$("#title").text("展示统计图");
+			$(".panel-body").children().slideDown();
+			$(".panel-body").children().not("#content").slideUp();
+		})
+		$("#li3").click(function(){
+			$("#title").text("DNA成分分析展示");
+			$(".panel-body").children().slideDown();
+			$(".panel-body").children().not("#statist").slideUp();
+		})
+		$("#li4").click(function(){
+			$("#title").text("蛋白质序列分析");
+			$(".panel-body").children().slideDown();
+			$(".panel-body").children().not("#protein").slideUp();
+		})
+		$("#li5").click(function(){
+			$("#title").text("DNA序列数据");
+			$(".panel-body").children().slideDown();
+			$(".panel-body").children().not("#sequence").slideUp();
+		})
+		$("#li6").click(function(){
+			$("#title").text("NCBI上下载gb格式文档");
+			$(".panel-body").children().slideDown();
+			$(".panel-body").children().not("#ncbi").slideUp();
+		})
+		$("#li7").click(function(){
+			$("#title").text("百度搜索感兴趣蛋白质名称");
+			$(".panel-body").children().slideDown();
+			$(".panel-body").children().not("#baidu").slideUp();
+		})
+		$("#li8").click(function(){
+			$("#title").text("蛋白质3D结构图");
+			$(".panel-body").children().slideDown();
+			$(".panel-body").children().not("#rcsb").slideUp();
+		})
+		$("#li9").click(function(){
+			$("#title").text("CDS序列");
+			$(".panel-body").children().slideDown();
+			$(".panel-body").children().not("#cds").slideUp();
+		})
+		$("#li10").click(function(){
+			$("#title").text("文件基本信息展示");
+			$(".panel-body").children().slideDown();
+			$(".panel-body").children().not("#tables").slideUp();
+		})
+		$("#li11").click(function(){
+			$("#title").text("用户成员信息展示");
+			$(".panel-body").children().slideDown();
+			$(".panel-body").children().not("#usertable").slideUp();
+		})
+	</script>
+</body>
+</html>

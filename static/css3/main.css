@@ -1,0 +1,167 @@
+*{
+	padding: 0px;
+	border: 0px;
+}
+center{
+	//height: 630px;
+	background:url(../image/back2.jpg);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+header{
+	background-color: #CC66FF;
+	background:url(../image/school.jpg);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height: 126px;
+	border: 1px solid black;
+}
+h1{
+	font-weight:900;
+	font-size:50px;
+}
+#hdiv{
+	transition: width 2s, height 2s, transform 2s;
+}
+#hdiv:hover{
+	transform:rotate(10deg);
+	font-size: 60px;
+}
+main{
+	height: 70%;
+	//border: 1px solid black;
+}
+menu{
+	width: 15%;
+	height: 510px;
+	border: 1px solid red;
+	float: left;
+	margin: 0px;
+}
+textbox{
+	float: left;
+	width: 84.7%;
+	height: 510px;
+	border: 1px solid black;
+}
+#content,#upate,#tables,#ncbi,#baidu,#rcsb,#statist{
+	height:430px;
+}
+textarea{
+	height:240px;
+	width:600px;
+	background: #DDDDDD;
+}
+#content>img{
+	width:49.7%;
+	height:49.7%;
+	float:left;
+	border:2px solid gray;
+}
+table{
+	border: 1px solid black;
+	text-align:center;
+}
+tr,th,td{
+	border: 1px solid black;
+	height: 40px;
+	width: 200px;
+	text-align:center;
+}
+ul{
+	width: 100%;
+	list-style: none;
+	margin: 0px;
+	float: left;
+	color: white;
+}
+menu>ul>li{
+	width: 95%;
+	height: 45px;
+	padding: 4px;
+	border:3px solid black;
+	background: #33ccff;
+}
+menu>ul>li:hover{
+	background: #0088a8;
+	font-size: 27px;
+}
+footer{
+	height: 463px;
+	//border: 1px solid black;
+	clear: both;
+}
+#user>form{
+	position: relative;
+	height: 95%;
+	width: 50%;
+	//border: 1px solid black;
+	border-radius:55px 0px;
+	margin-top: 10px;
+	background:#0aa344;
+	
+}
+#user>form>lable{
+	font-size: 26px;
+	background:;
+}
+.input{
+	width: 60%;
+	margin: 15px;
+	height: 45px;
+}
+#user>form>button{
+	width:200px;
+}
+#user>form>input{
+	background-color:gray;
+	color:white;
+	font-size:32px;
+	border-radius:20px;
+	padding-left:10px;
+}
+#tables{
+	overflow:auto;
+	height:400px;
+}
+#tables>table{
+	table-layout:fixed;
+}
+#tran{
+	width:50px;
+}
+#statist>img{
+	width:49.7%;
+	height:100%;
+	float:left;
+	border:2px solid gray;
+}
+#statist>table{
+	float:right;
+	border:2px solid gray;
+	width:49.7%;
+	height:100%;
+}
+#DNA{
+	background:green;
+	height:200px;
+	color:white;
+	letter-spacing:0.5px;
+	width:80%;
+	margin: auto;
+	overflow:auto;
+}
+#protein>img{
+	width:49.7%;
+	height:100%;
+	float:left;
+	border:2px solid gray;
+}
+#protein>div{
+	float:right;
+	border:2px solid gray;
+	width:49.7%;
+	background:green;
+	color:white;
+	margin-bottom:10px;
+}
